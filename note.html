@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A Bootstrap Blog Template">
+	<meta name="author" content="Vijaya Anand">
+	<title>HFei 博客|笔记</title>
+	<!-- Bootstrap CSS files -->
+	<!-- bootstrap.min.css是基本的CSS文件，它是强制性的 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- bootstrap-theme.min.css是可选的，它使用渐变和其他任意样式来装饰Bootstrap组件 - 这对组件是一个令人愉快的效果 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<body>
+	<!-- 导航栏标题开始 -->
+	<header class="navbar  navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">HFei博客</a>
+			</div>
+			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" name="form-control" placeholder="请输入要查找的信息">
+					</div>
+					<button type="submit" class="btn btn-default">提交</button>
+				</form>
+			    <ul class="nav navbar-nav">
+			        <li><a href="index.html">主页</a></li>
+			        <li><a href="contact.html">联系</a></li>
+			        <li><a href="about.html">关于</a></li>
+			        <li class="active"><a href="note.html">笔记</a></li>
+			    </ul>
+			</nav>
+		</div>
+	</header>
+	<!-- 导航栏标题结束 -->
+
+	<!-- 笔记主体开始 -->
+	<div class="container">
+		<div class="row">
+		<!-- 以下是关于移动工作中遇到的问题总汇 -->
+			<div class="col-md-6 col-sm-12">
+				<h1 class="well">移动问题汇总：</h1>
+				<div class="well">
+					<h2>HTML网页打开嵌入的office文档只显示"卓正office"</h2>
+					<p class="lead">点击IE11右上角工具<br />兼容性视图设置<br />把网页网址添加进去<br />点击确定后正常情况下会自动刷新网页</p>
+				</div>
+				<div class="well">
+					<h2>无纸化手写版签字不行</h2>
+					<p class="lead">手写板可以显示签字的界面，但是在签字的时候就写不上字。<br />这个时候只需要把对应签字版文件夹下面的CMCC开头的动态库文件复制放到系统文件夹下面的System32文件夹下面就行</p>
+				</div>
+				<div class="well">
+					<h2>CRM菜单里面，我的集团客户列表点击查询后白板</h2>
+					<p class="lead">类似此模块可以显示，但是点某些功能按钮后没有反应，没有改变。<br />解决此类问题先查看一下ie浏览器版本是否超过11.0.35，多数是因为超过了这个版本号出现的问题</p>
+				</div>
+				<div class="well">
+					<h2>ie有些功能（打印，导出表格等）没用</h2>
+					<p class="lead">检查一下ie浏览器的设置<br />安全<br />信任站点<br />activex控件设置</p>
+				</div>
+				<div class="well">
+					<h2>中国移动NGCRM打印机点击没反应</h2>
+					<p class="lead">中国移动NGCRM里面业务办理时候关于免填单打印点击后没反应，多是因为xxx.ocz控件没安装。找到移动软件里面打印机文件夹下面的打印机控件安装一下，会自动安装这个控件然后再重新打印</p>
+				</div>
+			</div>
+			<!-- 移动问题总汇结束 -->
+
+			<!-- 以下是平时关于软硬件方面遇到的各种问题汇总，慢慢积累，以后在归类 -->
+			<div class="col-md-6 col-sm-12">
+				<h1 class="well">其他软硬件问题汇总:</h1>
+				<div class="well">
+					<h2>局域网内设置了ip无法上网</h2>
+					<p class="lead">局域网内手动设置了ip却无法上网，显示还有自动配置的ip地址和子网掩码。<br />考虑更换一下手动设置的ip地址，可能是手动设置的ip地址有冲突。</p>
+				</div>
+				<div class="well">
+					<h2>win7服务里面的network list service启动不了（网络连接里有线和无线显示红叉和未连接，其实可以上网）</h2>
+					<p class="lead">1.运行 输入dcomcnfg<br />2.组件服务-计算机-我的电脑-DCOM配置-netprofm<br />3.右键属性-安全-启动和激活权限-自定义<br />4.编辑-添加-输入对象名称来选择-输入“LOCAL SERVICE”-确定<br />5.返回之后，注意勾选下面的本地启动和本地激活（注意，默认是没有选择的）<br />6.选择LOCAL SERVICE 应用，确定<br />7.组件服务-服务-Network List Service-右键启用！</p>
+				</div>
+				<div class="well">
+					<h2>WIN7点击IE浏览器后无任何反应</h2>
+					<p class="lead">可以通过修改 Windows 注册表的方式解决：<br />Win+R 打开“运行”后输入 regedit 打开 注册表编辑器<br />打开注册表编辑器（regedit）以后，找到注册表项<br />HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer<br />在注册表项“Internet Explorer”上面点击鼠标右键，在弹出的菜单中选择“权限”<br />在权限设置窗口中，点击“高级”按钮；在高级安全设置窗口中，复选“使用可从此对象继承的权限项目替换所有子对象的权限项目”按钮，再点击“应用”、“确定”按钮保存设置并关闭高级安全设置窗口<br />关闭注册表编辑器，点击 IE 浏览器图标，IE 浏览器已经能够正常运行了。<br />注：无论是 Win7 还是 Win8 的 IE 都有可以出现这个问题。</p>
+				</div>
+				<div class="well">
+					<h2>IP共享打印机提示错误0x00000bcd</h2>
+					<p class="lead">删除补丁KB4022722，如需要安装完打印机后再装上这个补丁</p>
+				</div>
+				<div class="well">
+					<h2>跨网段共享连接富士施乐网络复印机</h2>
+					<p class="lead">打开富士施乐安装盘或者安装文件里面有个Setup.exe→管理员工具里面最后个选项</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 笔记主体结束 -->
+
+	<hr />
+	<h3 class="text-center">最后更新时间： 3-10-2018 </h3>
+	<footer>
+		<!--典型的版权信息-->
+		<div class="container">
+			<hr />
+			<p class="text-center">版权 © HFei 2018. 保留所有权利</p>
+		</div>
+	</footer>
+</body>
+</html>

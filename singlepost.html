@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Bootstrap Blog Template">
+    <meta name="author" content="Vijaya Anand">
+    <title>HFei Personal blog</title>
+    <!-- Bootstrap CSS files -->
+    <!-- bootstrap.min.css是基本的CSS文件，它是强制性的 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- bootstrap-theme.min.css是可选的，它使用渐变和其他任意样式来装饰Bootstrap组件 - 这对组件是一个令人愉快的效果 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<body>
+    <!-- 导航栏标题开始 -->
+    <header class="navbar  navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">HFei博客</a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" name="form-control" placeholder="请输入要查找的信息">
+                    </div>
+                    <button type="submit" class="btn btn-default">提交</button>
+                </form>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">主页</a></li>
+                    <li><a href="contact.html">联系</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- 导航栏标题结束 -->
+
+    <div class="container">
+        <div class="row">
+        <!--主要内容开始-->
+            <div class="col-md-8">
+                <h1>最新文章</h1>
+                <!-- 每个帖子部分由帖子标题，类别，标签，总评论，发布日期，带图片的介绍段落以及继续链接组成。
+                HTML5提供了可用于在语义上表示每篇博文，论坛帖子，报纸文章等的<article>元素，我们将使用相同的。我们可以使用<h2>元素来表示帖子标题。像<h1>一样，bootstrap也为<h2>设置一些默认样式。
+                我们可以使用网格来安排类别，标签，总评论和发布日期元素。正如在模型中所示，在移动屏幕的情况下，我们希望网格崩溃，并且元素应该低于其他元素，并且在平板电脑和台式机的情况下，我们希望它们水平对齐。
+                考虑到所有这些因素，我创建了下面的HTML。请浏览HTML，我将在“探索标记”部分解释一些隐藏的内容。 -->
+                <article>
+                    <h2><a href="singlepost.html">白羊座 3月21日- 4月19日</a></h2>
+                    <div class="row">
+                        <div class="group1 col-sm-6 col-md-6">
+                            <span class="glyphicon glyphicon-folder-open"></span>  <a href="#">类别</a>
+                            <span class="glyphicon glyphicon-bookmark"></span>  <a href="#">白羊座</a> ,<a href="#">火</a>, <a href="#">火星</a>
+                        </div>
+                        <div class="group2 col-sm-6 col-md-6">
+                            <span class="glyphicon glyphicon-pencil"></span><a href="singlepost.html#comments">20 评论</a>
+                            <span class="glyphicon glyphicon-time">3月1日,2018 12:30</span>
+                        </div>
+                        <!-- 在上面的标记中，我应该指出的一件重要事情是关于自定义CSS类“group1”和“group2”。在平板电脑和台式电脑的情况下，“group1”CSS类并不重要，但需要“group2”才能将总评论和发布日期对齐到右侧。 -->
+                    </div>
+
+                    <hr>
+
+                    <img src="http://placehold.it/900x300" class="img-responsive">
+
+                    <br />
+
+                    <p class="lead">白羊座是黄道十二宫的第一个星座，而这就是在这个星座下出生的人如何看待自己的。白羊座是这群人的领袖，他们排在第一位。所有的事情是否完成都是另一个问题，因为白羊座喜欢主动而不是完成。你有一个需要启动的项目吗?无论如何要叫白羊座。白羊座的领导能力是最令人印象深刻的，因此，如果他们能够团结军队对抗看似不可逾越的障碍，也不要感到惊讶。</p>
+                    <p>白羊座的象征是羊，这既是好消息也是坏消息。冲动的白羊座可能会把他们的想法灌输到每个人的喉咙里，甚至不去问他们是否想知道。在这些时候，你可能希望白羊座的象征是一种更温顺的动物，也许比公羊还多。你不可能说服公羊软化;这些人直截了当，直截了当。随着这些品质的到来，白羊座的力量自然会强大起来，这是一种能真正完成很多事情的力量。白羊座的许多竞争和取胜的动力来自于它的基本品质。星座喜欢让事情发展，白羊座的例子比巨蟹座、天秤座和摩羯座更能说明问题。</p>
+
+                    <hr>
+
+                </article>
+
+                <article>
+                    
+                </article>
+
+                <!-- 返回主页按钮 -->
+                <ul class="pager">
+                    <li class="previous"><a href="index.html">返回主页</a></li>
+                </ul>
+
+                <div class="well">
+                    <h4>Leave a comment</h4>
+                 
+                    <form role="form" class="clearfix">
+                 
+                        <div class="col-md-6 form-group">
+                            <label class="sr-only" for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                 
+                        <div class="col-md-6 form-group">
+                            <label class="sr-only" for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                 
+                        <div class="col-md-12 form-group">
+                            <label class="sr-only" for="email">Comment</label>
+                            <textarea class="form-control" id="comment" placeholder="Comment"></textarea>
+                        </div>
+                 
+                        <div class="col-md-12 form-group text-right">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                 
+                    </form>
+                </div>
+                <ul id="comments" class="comments">
+                <!-- 我们必须在blog.css文件中创建几个CSS样式来清除边距，填充以及将列表样式设置为“none”作为评论列表。 -->
+                    <li class="comment">
+                        <div class="clearfix">
+                            <h4 class="pull-left">小张</h4>
+                            <p class="pull-right">9:40 on 3月1日,2018</p>
+                        </div>
+                        <p>
+                            <em>我不相信占星术，但你的写作风格真的很棒!</em>
+                        </p>
+                    </li>
+                    <li class="comment clearfix">
+                        <div class="clearfix">
+                            <h4 class="pull-left">小红</h4>
+                            <p class="pull-right">12:30 on 3月1日,2018</p>
+                        </div>
+                        <p>
+                            <em>我不相信占星术，但你的写作风格真的很棒!</em>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- 主要内容结束 -->
+
+
+            <!-- 侧边小部件开始 -->
+            <div class="col-md-4">
+                <div class="well text-center">
+                    <p class="lead">
+                        不想错过更新?<br />请点击下面的按钮↓
+                    </p>
+                    <button class="btn btn-primary btn-lg">订阅我的</button>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>最新文章</h4>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="singlepost.html">1、白羊座的太阳星座：3月21日-4月19日</a></li>
+                        <li class="list-group-item"><a href="singlepost.html">2、金牛座的太阳星座：4月20日-5月20日</a></li>
+                        <li class="list-group-item"><a href="singlepost.html">3、双子座的太阳星座：5月21日-6月21日</a></li>
+                        <li class="list-group-item"><a href="singlepost.html">4、巨蟹座的太阳星座：6月22日-7月22日</a></li>
+                        <li class="list-group-item"><a href="singlepost.html">5、狮子座的太阳星座：7月23日-8月22日</a></li>
+                    </ul>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>类别</h4>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">星座</a></li>
+                        <li class="list-group-item"><a href="#">元素</a></li>
+                        <li class="list-group-item"><a href="#">行星</a></li>
+                        <li class="list-group-item"><a href="#">月角</a></li>
+                        <li class="list-group-item"><a href="#">兼容</a></li>
+                    </ul>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>最新评论</h4>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">我不相信占星术，但你的写作风格还是很不错的。</a></li>
+                        <li class="list-group-item"><a href="#">哇. .你说的都是真的!我是一个白羊座</a></li>
+                        <li class="list-group-item"><a href="#">摩羯和白羊座是相容性的吗?</a></li>
+                        <li class="list-group-item"><a href="#">我是一个巨蟹座的女人，爱上了里奥。这工作吗?</a></li>
+                    </ul>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>标签</h4>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-inline">
+                            <li><a href="#">白羊座</a></li>
+                            <li><a href="#">火</a></li>
+                            <li><a href="#">火星</a></li>
+                            <li><a href="#">金牛座</a></li>
+                            <li><a href="#">地球</a></li>
+                            <li><a href="#">月亮</a></li>
+                            <li><a href="#">双子</a></li>
+                            <li><a href="#">空气</a></li>
+                            <li><a href="#">水星</a></li>
+                            <li><a href="#">巨蟹座</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 侧边小部件结束 -->
+        </div>
+    </div>
+
+    <footer>
+        <!--典型的版权信息-->
+        <div class="container">
+            <hr />
+            <p class="text-center">版权 © HFei 2018. 保留所有权利</p>
+        </div>
+    </footer>
+    <!-- Jquery and Bootstrap Script files -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

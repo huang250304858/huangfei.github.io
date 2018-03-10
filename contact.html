@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HFei博客|联系</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Bootstrap Blog Template">
+    <meta name="author" content="Vijaya Anand">
+    <!-- Bootstrap CSS files -->
+    <!-- bootstrap.min.css是基本的CSS文件，它是强制性的 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- bootstrap-theme.min.css是可选的，它使用渐变和其他任意样式来装饰Bootstrap组件 - 这对组件是一个令人愉快的效果 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<body>
+	<!-- 导航栏标题开始 -->
+	<header class="navbar  navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">HFei博客</a>
+			</div>
+			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" name="form-control" placeholder="请输入要查找的信息">
+					</div>
+					<button type="submit" class="btn btn-default">提交</button>
+				</form>
+			    <ul class="nav navbar-nav">
+			        <li><a href="index.html">主页</a></li>
+			        <li class="active"><a href="contact.html">联系</a></li>
+			        <li><a href="about.html">关于</a></li>
+			        <li><a href="note.html">笔记</a></li>
+			    </ul>
+			</nav>
+		</div>
+	</header>
+	<!-- 导航栏标题结束 -->
+
+	<!-- 联系页面主体开始 -->
+	<div class="container">
+		<h1> 联系我 </h1>
+		<div class="well">
+			<p class="lead">你有什么问题吗?请使用以下联系方式并发出讯息，我会尽快回复你。</p>
+		</div>
+		<div class="contact-form">
+			<form class="form-horizontal col-md-8" role="form">
+				<div class="form-group">
+					<label for="name" class="col-md-2">姓名</label>
+					<div class="col-md-10">
+						<input type="text" class="form-control" id="name" placeholder="请输入姓名">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-md-2">邮箱</label>
+					<div class="col-md-10">
+						<input type="email" class="form-control" id="email" placeholder="请输入邮箱">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="subject" class="col-md-2">主题</label>
+					<div class="col-md-10">
+						<input type="subject" class="form-control" id="subject" placeholder="请输入主题">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="message" class="col-md-2">消息</label>
+					<div class="col-md-10">
+						<textarea class="form-control" id="message" placeholder="请输入内容"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12 text-right">
+						<button type="submit" class="btn btn-lg bt-primary">提交信息</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- 联系页面主体结束 -->
+
+	<footer>
+		<!--典型的版权信息-->
+		<div class="container">
+			<hr />
+			<p class="text-center">版权 © HFei 2018. 保留所有权利</p>
+		</div>
+	</footer>
+	
+
+	<!-- Jquery and Bootstrap Script files -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
